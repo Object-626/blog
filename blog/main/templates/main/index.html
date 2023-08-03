@@ -13,12 +13,19 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/blog.png' %}" alt="Блог">
+        <img src="{% static 'main/img/blog2.png' %}" alt="Блог">
         <span class="logo">Object626</span>
         <h3>Навигация</h3>
         <ul>
         <a href="{% url 'home'%}"><li><i class="fa-solid fa-igloo"></i>Главная</li></a>
+        <a href="{% url 'Articles' %}"><li><i class="fa-solid fa-newspaper"></i>Статьи</li></a>
+        <a href="{% url 'author'%}"><li><i class="fa-solid fa-at"></i>Авторы</li></a>
         </ul>
     </aside>
+    <main>
+        <article class="main">
+            В этом блоге вы найдёте статьи с проектами.
+        </article>
+    </main>
 </body>
 </html>

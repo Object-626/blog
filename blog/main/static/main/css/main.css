@@ -17,7 +17,7 @@ aside img {
 
 aside {
     float: left;
-    background: #181818;
+    background: #53cbe5;
     width: 20%;
     padding: 2.5%;
     height: 100%;
@@ -31,7 +31,7 @@ aside h3 {
 }
 
 aside ul li {
-    color: #32db18;
+    color: #3f2ff5;
     display: block;
     margin-top: 20px;
     transition: transform .6s ease;
@@ -40,4 +40,16 @@ aside ul li {
 aside ul li:hover, aside ul a:hover {
     color: #eb5959;
     transform: scale(1.1);
+}
+
+.main {
+    color: #09ed11;
+    text-align: center;
+    padding-top: 220px;
+    font-size: 24px;
+    background-image: url("../img/fon.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 615px;
+    width: 1360px;
 }
