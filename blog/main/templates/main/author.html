@@ -1,8 +1,16 @@
-{% extends 'main/index.html' %}
+{% extends 'main/general.html' %}
 
 {% block title %}Авторы статей{% endblock %}
 
 {% block content %}
-    <h1>Авторы статей</h1>
-
-{% endblock%}
+    <div class="features">
+        <h1>Авторы статей</h1>
+        {% for el in authors %}
+            <div class="alert alert-warning">
+                <h3>{{ el.name }}</h3>
+                <p>{{ el.status }}</p>
+                <a href="{% url 'main-detail' el.id %}" class="btn btn-warning">Подробнее</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

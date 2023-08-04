@@ -1,0 +1,11 @@
+{% extends main/general.html %}
+
+{% block title %}Удаление автора{% endblock %}
+
+{% block content %}
+    <div>Удаление автора</div>
+    <form method="post">
+        {% csrf_token %}
+        <button class="btn btn-danger" type="submit">Удалить автора</button>
+    </form>
+{%endblock%}
