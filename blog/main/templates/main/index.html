@@ -20,12 +20,12 @@
         <a href="{% url 'home'%}"><li><i class="fa-solid fa-igloo"></i>Главная</li></a>
         <a href="{% url 'Articles' %}"><li><i class="fa-solid fa-newspaper"></i>Статьи</li></a>
         <a href="{% url 'author'%}"><li><i class="fa-solid fa-at"></i>Авторы</li></a>
+        <a href="{% url 'create_author' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить автора</button></li></a>
         </ul>
     </aside>
     <main>
-        <article class="main">
-
-        </article>
+        {% block content %}
+        {% endblock %}
     </main>
 </body>
 </html>
